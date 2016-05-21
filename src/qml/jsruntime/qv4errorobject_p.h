@@ -42,7 +42,7 @@ namespace QV4 {
 
 struct SyntaxErrorObject;
 
-struct ErrorObject: Object {
+struct Q_QML_PRIVATE_EXPORT ErrorObject: Object {
     enum {
         IsErrorObject = true
     };
@@ -195,7 +195,7 @@ struct URIErrorCtor: ErrorCtor
 };
 
 
-struct ErrorPrototype : ErrorObject
+struct Q_QML_PRIVATE_EXPORT ErrorPrototype : ErrorObject
 {
     void init(ExecutionEngine *engine, Object *ctor) { init(engine, ctor, this); }
 

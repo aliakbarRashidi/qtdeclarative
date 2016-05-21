@@ -42,7 +42,7 @@ QT_BEGIN_NAMESPACE
 
 namespace QV4 {
 
-struct JsonObject : Object {
+struct Q_QML_PRIVATE_EXPORT JsonObject : Object {
     struct Data : Object::Data {
         Data(InternalClass *ic);
     };
@@ -78,4 +78,3 @@ private:
 QT_END_NAMESPACE
 
 #endif
-

@@ -221,7 +221,7 @@ struct IndexedBuiltinFunction: FunctionObject
 };
 
 
-struct SimpleScriptFunction: FunctionObject {
+struct Q_QML_PRIVATE_EXPORT SimpleScriptFunction: FunctionObject {
     struct Data : FunctionObject::Data {
         Data(ExecutionContext *scope, Function *function, bool createProto);
     };
@@ -233,7 +233,7 @@ struct SimpleScriptFunction: FunctionObject {
     InternalClass *internalClassForConstructor();
 };
 
-struct ScriptFunction: SimpleScriptFunction {
+struct Q_QML_PRIVATE_EXPORT ScriptFunction: SimpleScriptFunction {
     struct Data : SimpleScriptFunction::Data {
         Data(ExecutionContext *scope, Function *function);
     };

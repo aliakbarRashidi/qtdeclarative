@@ -206,7 +206,7 @@ struct InternalClassTransition
 };
 uint qHash(const QV4::InternalClassTransition &t, uint = 0);
 
-struct InternalClass : public QQmlJS::Managed {
+struct Q_QML_PRIVATE_EXPORT InternalClass : public QQmlJS::Managed {
     ExecutionEngine *engine;
     Object *prototype;
     const ManagedVTable *vtable;

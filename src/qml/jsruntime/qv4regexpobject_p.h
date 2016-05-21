@@ -55,7 +55,7 @@ QT_BEGIN_NAMESPACE
 
 namespace QV4 {
 
-struct RegExpObject: Object {
+struct Q_QML_PRIVATE_EXPORT RegExpObject: Object {
     struct Data : Object::Data {
         Data(ExecutionEngine *engine, RegExp *value, bool global);
         Data(ExecutionEngine *engine, const QRegExp &re);
